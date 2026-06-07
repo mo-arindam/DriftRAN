@@ -60,6 +60,9 @@ Outputs (figures + CSVs) are written to `results/`; parsed sequences are cached 
 | T1 | `baselines.py` | **Fig. 10**, Table V (baselines) | CSV + `cache/anomaly_scores`† |
 | T1 | `ablations_detector.py` | **Fig. 11** (detector sensitivity) | CSV |
 | T1 | `drift_feasibility.py` | covariate-vs-concept feasibility | CSV |
+| T1 | `covariate_overlap.py` | covariate-overlap/domain-shift diagnostics | CSV |
+| T1 | `placebo_controls.py` | commit-label and episode-window negative controls | CSV |
+| T1 | `robustness_exclusions.py` | transfer-gap robustness excluding `f7d3b72` | CSV |
 | T1 | `world_model_probe.py` | transfer gap; writes `cache/anomaly_scores` | `cache/perframe` |
 | T1 | `world_model_sigreg.py` | **Fig. 9**, Table IV (SIGReg) | `cache/perframe` |
 | T1 | `ablations_worldmodel.py` | **Fig. 12** (world-model ablations) | `cache/perframe` |
@@ -73,7 +76,7 @@ which is written by `world_model_probe.py` — run the probe first (handled by
 
 ```
 DriftRAN/
-├── *.py                 # 12 analysis scripts (see table)
+├── *.py                 # analysis scripts (see table)
 ├── run_all.sh           # T0 -> T1 -> T2
 ├── requirements.txt
 ├── cache/               # generated (git-ignored)

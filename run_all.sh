@@ -19,7 +19,8 @@ echo "== T0: parse per-frame telemetry into cache/ =="
 
 echo "== T1: CSV-only analyses =="
 for s in predictability holdout_eval case_and_detector rach_target \
-         ablations_detector drift_feasibility; do
+         ablations_detector drift_feasibility covariate_overlap \
+         placebo_controls robustness_exclusions; do
   echo "-- $s"; "$PY" "$s.py"
 done
 
