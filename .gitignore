@@ -1,0 +1,17 @@
+# generated artifacts (regenerate via run_all.sh) -- keep the dirs, ignore contents
+cache/*
+results/*
+!cache/.gitkeep
+!results/.gitkeep
+
+# the dataset is not redistributed here
+RANalyzer-Dataset/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# os
+.DS_Store
